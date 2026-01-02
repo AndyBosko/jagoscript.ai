@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JagoScript.ai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>JagoScript.ai</h1>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<main>
+  <p class="subtitle">Tulis ide. Rekam. Upload. Selesai.</p>
+
+  <textarea id="ideaInput" placeholder="Tulis ide konten kamu di sini..."></textarea>
+
+  <div class="row">
+    <select id="platform">
+      <option>TikTok</option>
+      <option>Reels</option>
+      <option>Shorts</option>
+      <option>YouTube</option>
+    </select>
+
+    <select id="style">
+      <option>Santai</option>
+      <option>Edukatif</option>
+      <option>Storytelling</option>
+      <option>Soft Selling</option>
+    </select>
+  </div>
+
+  <div class="toggle">
+    <span>Negative Hook</span>
+    <label class="switch">
+      <input type="checkbox" id="negativeHook">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <button id="generateBtn">🚀 Bikin Skrip</button>
+
+  <section id="output"></section>
+
+  <div id="exportBtns" class="hidden">
+    <button id="exportPDF">📄 Export PDF</button>
+    <button id="exportDOC">📝 Export Word</button>
+  </div>
+</main>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
